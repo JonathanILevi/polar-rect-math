@@ -1,0 +1,6 @@
+name "polar-rect-math"
+description "Polar Rect math and conversion library."
+authors "Jonathan Levi"
+copyright "Copyright © 2018, Jonathan Levi"
+license "CC0"
+////dependency "tau" version="~>1.0.1"
