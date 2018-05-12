@@ -22,12 +22,12 @@ T	getR(T	)	(T x, T y	)	if (isNumeric!T	)	{	return sqrt(pow(x,2)+pow(y,2))	;}
 ReturnT	getR(ReturnT, ValueT	)	(ValueT[2] rect	)	if (isNumeric!ReturnT && isNumeric!ValueT	)	{	return sqrt(pow(rect[0],2)+pow(rect[1],2))	;}
 T	getR(T	)	(T[2] rect	)	if (isNumeric!T	)	{	return sqrt(pow(rect[0],2)+pow(rect[1],2))	;}
 //---T									
-ReturnT	getT(ReturnT, XT, YT	)	(XT x, YT y	)	if (isNumeric!ReturnT && isNumeric!XT && isNumeric!YT	)	{	return atan(y/x)	;}
-ReturnT	getT(ReturnT, ValueT	)	(ValueT x, ValueT y	)	if (isNumeric!ReturnT && isNumeric!ValueT	)	{	return atan(y/x)	;}
-T	getT(T	)	(T x, T y	)	if (isNumeric!T	)	{	return atan(y/x)	;}
-ReturnT	getT(ReturnT, ValueT	)	(ValueT[2] rect	)	if (isNumeric!ReturnT && isNumeric!ValueT	)	{	return atan(rect[0]/rect[1])	;}
-T	getT(T	)	(T[2] rect	)	if (isNumeric!T	)	{	return atan(rect[0]/rect[1])	;}
-
+ReturnT	getTheda(ReturnT, XT, YT	)	(XT x, YT y	)	if (isNumeric!ReturnT && isNumeric!XT && isNumeric!YT	)	{	return atan(y/x)	;}
+ReturnT	getTheda(ReturnT, ValueT	)	(ValueT x, ValueT y	)	if (isNumeric!ReturnT && isNumeric!ValueT	)	{	return atan(y/x)	;}
+T	getTheda(T	)	(T x, T y	)	if (isNumeric!T	)	{	return atan(y/x)	;}
+ReturnT	getTheda(ReturnT, ValueT	)	(ValueT[2] rect	)	if (isNumeric!ReturnT && isNumeric!ValueT	)	{	return atan(rect[1]/rect[0])	;}
+T	getTheda(T	)	(T[2] rect	)	if (isNumeric!T	)	{	return atan(rect[1]/rect[0])	;}
+alias getT = getTheda;
 
 //---Rect
 ReturnT[2]	getRect(ReturnT, RT, TT	)	(RT r, TT t	)	if (isNumeric!ReturnT && isNumeric!RT && isNumeric!TT	)	{	return [getX(r,t)	,getY(r,t)	]	;}
